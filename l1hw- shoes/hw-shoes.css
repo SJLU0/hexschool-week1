@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+.main-container {
+  margin: 64px auto;
+  width: 856px;
+  font-family: "Noto Sans TC", sans-serif;
+  background: lightgreen;
+}
+
+.brand-intro img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #57a203;
+}
+
+p,
+li,
+a {
+  line-height: 150%;
+  margin: 8px 0;
+}
+
+/* 全域設定結束 */
+.section {
+  padding-bottom: 48px;
+  background: lightgray;
+}
+
+/* 品牌歷程 */
+.brand-history li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0.5em;
+}
+
+/* 品牌理念 */
+.brand-concept li {
+  padding: 0 12px;
+}
+
+/* 品牌小故事 */
+.brand-story a {
+  display: block;
+  color: #57a203;
+  text-underline-offset: 10px;
+}
+.brand-story i {
+  padding-right: 10px;
+}

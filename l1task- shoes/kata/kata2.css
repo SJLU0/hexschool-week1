@@ -1,0 +1,46 @@
+/* 全域共通設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.text {
+  line-height: 1.5;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+/* 各區設定 */
+.section {
+  display: flex;
+}
+
+.news {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+/* footer */
+.footer {
+  text-align: center;
+  padding: 52px 0;
+  background: lightgray;
+}
