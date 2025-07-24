@@ -124,6 +124,19 @@ body {
   margin-bottom: 48px;
 }
 
+/* flex相關 */
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
 /* page */
 .header {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
