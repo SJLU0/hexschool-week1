@@ -3,6 +3,7 @@
 /* 顏色通用樣式 */
 :root {
   --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
   --primary-400: #57a203;
   --neutral-0: #ffffff;
   --neutral-100: #f8f9fa;
@@ -22,8 +23,8 @@
 
 a {
   /* display: block;
-  color: var(--primary-400);
   text-underline-offset: 4px; */
+  color: var(--neutral-900);
   text-decoration: none;
 }
 
@@ -47,17 +48,81 @@ img {
 }
 
 /* 格線系統的通用樣式 */
-
-.col {
-  padding-left: 12px;
-  padding-right: 12px;
-  width: calc(100% / 12 * 2); /*ctrl + G 就是 */
-}
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -12px;
   margin-left: -12px;
+}
+.col-1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12); /*ctrl + G figma就能看到 */
+}
+
+.col-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 4);
+}
+.col-5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
 }
 
 .h1 {
@@ -104,6 +169,10 @@ img {
 .bg-primary-100 {
   background-color: var(--primary-100);
 }
+
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
 .bg-neutral-100 {
   background-color: var(--neutral-100);
 }
@@ -112,6 +181,10 @@ img {
 .p-12 {
   padding: 12px;
 }
+.py-24 {
+  padding: 24px 0;
+}
+
 .py-32 {
   padding: 32px 0;
 }
@@ -136,6 +209,10 @@ img {
 }
 
 /* margin */
+.mb-4 {
+  margin-bottom: 4px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -148,8 +225,24 @@ img {
   margin-bottom: 24px;
 }
 
+.mb-64 {
+  margin-bottom: 64px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
 }
 
 .mr-40 {
@@ -180,6 +273,7 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 /* 麵包屑分隔符號 */
 .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
@@ -193,5 +287,50 @@ img {
 }
 
 .breadcrumb-link {
+  color: var(--neutral-600);
+}
+/* 分類  */
+.category .active {
+  color: var(--primary-400);
+}
+
+/*按鈕通用樣式*/
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.page-item .active {
+  background: var(--primary-400);
+  font-weight: 500;
+}
+/*深色按鈕樣式*/
+.btn-dark {
+  background: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+/* footer */
+.logo {
+  padding: 8px 12px;
+}
+
+.copyright {
+  padding-top: 32px;
+  text-align: center;
+}
+.copyright a {
   color: var(--neutral-600);
 }
