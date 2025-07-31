@@ -112,7 +112,7 @@ img {
 .p-12 {
   padding: 12px;
 }
-.p-32 {
+.py-32 {
   padding: 32px 0;
 }
 
@@ -180,53 +180,18 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
-
-/* page */
-.header {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 152px 0;
-  text-align: center;
-}
-.header-title {
-  font-size: 28px;
+/* 麵包屑分隔符號 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 12px;
+  color: var(--neutral-300);
+  font-weight: 700;
 }
 
-/* 走出城市的節奏... */
-.quote {
-  border-radius: 12px;
-  text-align: center;
+.breadcrumb-item {
+  font-weight: 500;
 }
 
-.intro img {
-  width: 1076px;
-  margin-left: -110px;
-  margin-right: -110px;
-}
-
-.section-line {
-  border-bottom: 1px solid var(--neutral-300);
-}
-
-/* 品牌歷程 */
-
-.brand-history {
-  border-left: 1px solid var(--neutral-600);
-  padding-left: 8px;
-}
-.brand-history-list {
-  list-style-type: disc;
-  padding-left: 28px;
-}
-
-/* 品牌小故事 */
-.bi {
-  margin-right: 8px;
-  vertical-align: bottom;
-}
-
-.footer {
-  text-align: center;
+.breadcrumb-link {
+  color: var(--neutral-600);
 }
