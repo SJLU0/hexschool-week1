@@ -21,9 +21,10 @@
 }
 
 a {
-  display: block;
+  /* display: block;
   color: var(--primary-400);
-  text-underline-offset: 4px;
+  text-underline-offset: 4px; */
+  text-decoration: none;
 }
 
 body {
@@ -34,9 +35,29 @@ body {
   color: var(--neutral-900);
 }
 
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 856px;
+  width: 1296px;
   margin: 0 auto;
+}
+
+/* 格線系統的通用樣式 */
+
+.col {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2); /*ctrl + G 就是 */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 .h1 {
@@ -88,6 +109,9 @@ body {
 }
 
 /*間距樣式*/
+.p-12 {
+  padding: 12px;
+}
 .p-32 {
   padding: 32px 0;
 }
@@ -96,6 +120,9 @@ body {
   padding: 8px 0;
 }
 
+.py-12 {
+  padding: 12px 0;
+}
 .py-64 {
   padding: 64px 0;
 }
@@ -107,6 +134,7 @@ body {
 .pr-8 {
   padding-right: 8px;
 }
+
 /* margin */
 .mb-12 {
   margin-bottom: 12px;
@@ -124,17 +152,33 @@ body {
   margin-bottom: 48px;
 }
 
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
 /* flex相關 */
 .d-flex {
   display: flex;
 }
 
-.jc-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.jc-center {
+.justify-center {
   justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 /* page */

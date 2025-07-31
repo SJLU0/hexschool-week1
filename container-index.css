@@ -1,0 +1,17 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+.li-font {
+  line-height: 2;
+}
+.li-font a {
+  text-decoration: none;
+  font-size: 32px;
+  color: gray;
+}
+
+.li-font a:hover {
+  color: coral;
+}
